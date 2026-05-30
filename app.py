@@ -1,4 +1,4 @@
-```python
+python
 from fastapi import FastAPI, UploadFile, File
 from fastapi.responses import FileResponse
 import fitz
