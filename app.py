@@ -185,4 +185,3 @@ async def extract_pages(file: UploadFile = File(...)):
 
         if os.path.exists(pdf_path):
             os.remove(pdf_path)
-```
