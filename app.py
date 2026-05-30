@@ -129,3 +129,9 @@ async def analyze_pdf(file: UploadFile = File(...)):
 
         if os.path.exists(pdf_path):
             os.remove(pdf_path)
+            @app.post("/test-upload")
+async def test_upload(file: UploadFile = File(...)):
+    return {
+        "filename": file.filename,
+        "content_type": file.content_type
+    }
